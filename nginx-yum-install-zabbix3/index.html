@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>zabbix# centos7 yum 安装zabbix3.0 | Thinking</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">zabbix# centos7 yum 安装zabbix3.0</h1><a id="logo" href="/.">Thinking</a><p class="description"></p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/rss/"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">zabbix# centos7 yum 安装zabbix3.0</h1><div class="post-meta">Mar 14, 2016<span> | </span><span class="category"><a href="/categories/zabbix/">zabbix</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-thread-key="nginx-yum-install-zabbix3/" href="/nginx-yum-install-zabbix3/#comments" class="ds-thread-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#安装epel源-并安装所需要的软件"><span class="toc-number">1.</span> <span class="toc-text">安装epel源,并安装所需要的软件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#防火墙设置-firewall-cmd"><span class="toc-number">2.</span> <span class="toc-text">防火墙设置 firewall-cmd</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#重启systemctl-restart-nginx-service"><span class="toc-number">3.</span> <span class="toc-text">重启systemctl restart nginx.service</span></a></li></ol></div></div><div class="post-content"><h5 id="安装epel源-并安装所需要的软件"><a href="#安装epel源-并安装所需要的软件" class="headerlink" title="安装epel源,并安装所需要的软件"></a>安装epel源,并安装所需要的软件</h5><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh http<span class="variable">s:</span>//<span class="keyword">dl</span>.fedoraproject.org/pub/epel/epel-release-latest-<span class="number">7</span>.noarch.rpm </span><br><span class="line">yum -<span class="keyword">y</span> install gcc gcc-<span class="keyword">c</span>++ <span class="keyword">vim</span> openipmi libssh2 fping libcurl libiksemel libxml2 net-snmp</span><br></pre></td></tr></table></figure>
+<h5 id="防火墙设置-firewall-cmd"><a href="#防火墙设置-firewall-cmd" class="headerlink" title="防火墙设置 firewall-cmd"></a>防火墙设置 firewall-cmd</h5><p><code>启用防火墙: systemctl start firewalld.service
+            查看状态：    systemctl start firewalld.service  /  firewall-cmd --state
+            开机启动：  systemctl enable firewalld.service
+            添加永久端口：  firewall-cmd --permanet  --add-port=5201/tcp
+            删除永久端口:    firewall-cmd --permanent --remove-port=80/tcp
+            配置生效：  firewall-cmd --reload</code><br><figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">			[root<span class="symbol">@monitor</span> <span class="built_in">opt</span>]<span class="meta"># firewall-cmd --state</span></span><br><span class="line">			running</span><br><span class="line">			[root<span class="symbol">@monitor</span> <span class="built_in">opt</span>]<span class="meta"># firewall-cmd --list-all</span></span><br><span class="line">			public (<span class="keyword">default</span>)</span><br><span class="line">			  interfaces: </span><br><span class="line">			  sources: </span><br><span class="line">			  services: dhcpv6-client ssh</span><br><span class="line">			  ports: <span class="number">5201</span>/tcp</span><br><span class="line">			  masquerade: no</span><br><span class="line">			  forward-ports: </span><br><span class="line">			  icmp-blocks: </span><br><span class="line">			  rich rules: </span><br><span class="line">				</span><br><span class="line">			[root<span class="symbol">@monitor</span> <span class="built_in">opt</span>]<span class="meta"># firewall-cmd --permanent --add-port=80/tcp</span></span><br><span class="line">			success</span><br><span class="line">			[root<span class="symbol">@monitor</span> <span class="built_in">opt</span>]<span class="meta"># firewall-cmd --reload</span></span><br><span class="line">			success</span><br><span class="line">			[root<span class="symbol">@monitor</span> <span class="built_in">opt</span>]<span class="meta"># firewall-cmd --list-all</span></span><br><span class="line">			public (<span class="keyword">default</span>)</span><br><span class="line">			  interfaces: </span><br><span class="line">			  sources: </span><br><span class="line">			  services: dhcpv6-client ssh</span><br><span class="line">			  ports: <span class="number">80</span>/tcp <span class="number">5201</span>/tcp</span><br><span class="line">			  masquerade: no</span><br><span class="line">			  forward-ports: </span><br><span class="line">			  icmp-blocks: </span><br><span class="line">			  rich rules: </span><br><span class="line">			[root<span class="symbol">@monitor</span> ~]<span class="meta"># firewall-cmd --permanent --remove-port=80/tcp</span></span><br><span class="line">			success</span><br><span class="line">			[root<span class="symbol">@monitor</span> ~]<span class="meta"># firewall-cmd --reload                        </span></span><br><span class="line">			success</span><br><span class="line">			[root<span class="symbol">@monitor</span> ~]<span class="meta"># firewall-cmd --list-all</span></span><br><span class="line">			public (<span class="keyword">default</span>)</span><br><span class="line">			  interfaces: </span><br><span class="line">			  sources: </span><br><span class="line">			  services: dhcpv6-client ssh</span><br><span class="line">			  ports: <span class="number">5201</span>/tcp</span><br><span class="line">			  masquerade: no</span><br><span class="line">			  forward-ports: </span><br><span class="line">			  icmp-blocks: </span><br><span class="line">			  rich rules: </span><br><span class="line">```			</span><br><span class="line"><span class="meta">##### 安装 php56</span></span><br></pre></td></tr></table></figure></p>
+<pre><code>rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+
+yum -y install  php56w php56w-gd php56w-bcmath php56w-ctype php56w-fpm php56w-xml php56w-dom php56w-xmlreader php56w-xmlwriter php56w-session php56w-net-socket php56w-mbstring php56w-gettext php56w-mysqlnd 
+
+#修改/etc/php.ini 部参数的值
+ max_execution_time 300
+ memory_limit 128M
+ post_max_size 16M
+ upload_max_filesize 2M
+ max_input_time 300
+ always_populate_raw_post_data -1
+ date.timezone &quot;Asia/Shanghai&quot;    
+
+#启动 php-fpm 
+    systemctl start php-fpm.service
+</code></pre><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">##### 安装nginx</span></span><br></pre></td></tr></table></figure>
+<pre><code>cat  /etc/yum.repos.d/nginx.repo 
+    [nginx]
+    name=nginx repo
+    baseurl=http://nginx.org/packages/centos/7/$basearch/
+    gpgcheck=0
+    enabled=1
+yum -y install nginx gperftools 
+</code></pre><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">	</span><br><span class="line"><span class="meta">##### 安装mysql数据库 percona-server</span></span><br></pre></td></tr></table></figure>
+<pre><code>yum -y install http://www.percona.com/downloads/percona-release/redhat/0.1-3/percona-release-0.1-3.noarch.rpm
+yum  -y install Percona-Server-server-57
+</code></pre><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">##### 安装 zabbix3.0</span></span><br></pre></td></tr></table></figure>
+<pre><code>rpm -ivh http://repo.zabbix.com/zabbix/3.0/rhel/7/x86_64/zabbix-release-3.0-1.el7.noarch.rpm
+#安装zabbix server
+yum install zabbix-server-mysql zabbix-web-mysql -y 
+#安装zabbix agent
+yum install zabbix-agent -y
+#初始化zabbix 数据库
+[root@localhost doc]# mysql -e &quot;CREATE DATABASE IF NOT EXISTS zabbix DEFAULT CHARSET utf8 COLLATE utf8_general_ci;&quot;
+[root@localhost doc]# cd /usr/share/doc/zabbix-server-mysql-3.0.0/
+[root@localhost zabbix-server-mysql-3.0.0]# ls
+AUTHORS  ChangeLog  COPYING  create.sql.gz  NEWS  README
+[root@localhost doc]# zcat create.sql.gz | mysql -uroot zabbix
+</code></pre><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">##### 配置zabbix server连接数据库</span></span><br></pre></td></tr></table></figure>
+<pre><code>[root@localhost zabbix]# cat /etc/zabbix/zabbix_server.conf |grep -E &apos;DB(N|P|H)&apos;
+### Option: DBHost
+ DBHost=192.168.0.44
+### Option: DBName
+#    For SQLite3 path to database file must be provided. DBUser and DBPassword are ignored.
+# DBName=
+DBName=zabbix
+### Option: DBPassword
+# DBPassword=
+ DBPassword=zabbixpassword
+### Option: DBPort
+# DBPort=3306
+</code></pre><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">##### 配置nginx,使用nginx来代理zabbix,并打开nginx status,和php-fpm 状态页</span></span><br></pre></td></tr></table></figure>
+<pre><code>[root@localhost zabbix]# cat  /etc/nginx/conf.d/zabbix.conf 
+    server {
+        listen       80;
+        server_name  localhost;
+
+        charset utf8;
+        access_log  /var/log/nginx/zabbix.access.log  main;
+
+        location / {
+            root   /usr/share/zabbix;
+            index   index.php index.html index.htm;
+        }
+
+        #error_page  404              /404.html;
+
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   /usr/share/nginx/html;
+        }
+
+        # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+        #
+        #location ~ \.php$ {
+        #    proxy_pass   http://127.0.0.1;
+        #}
+
+        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+        #
+    ################# nginx status #################################
+    location =/nginx_status/ {
+            # Turn on nginx stats
+            stub_status on;
+            # I do not need logs for stats
+            access_log   off;
+            # Security: Only allow access from IP #
+            allow 127.0.0.1;
+        deny all;
+        }
+
+    ################# nginx status  end #################################
+    ################# php-fpm status  end #################################
+    location = /php-fpm_status
+        {
+            include fastcgi_params;
+            fastcgi_pass 127.0.0.1:9000;
+            fastcgi_param SCRIPT_FILENAME $fastcgi_script_name;
+        }
+
+    ################# php-fpm status  end #################################
+        location ~ \.php$ {
+            root           /usr/share/zabbix;
+            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_index  index.php;
+            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+            include        fastcgi_params;
+        }
+
+        # deny access to .htaccess files, if Apache&apos;s document root
+        # concurs with nginx&apos;s one
+        #
+        #location ~ /\.ht {
+        #    deny  all;
+        #}
+    }
+</code></pre><p>```</p>
+<h5 id="重启systemctl-restart-nginx-service"><a href="#重启systemctl-restart-nginx-service" class="headerlink" title="重启systemctl restart nginx.service"></a>重启systemctl restart nginx.service</h5></div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://blog.hp-z.com/nginx-yum-install-zabbix3/" data-id="cimeshznx0000y4vqoz3529zh" class="article-share-link">分享到</a><div class="tags"></div><div class="post-nav"><a href="/nginx-yum-install-nginx/" class="next">nginx# yum 安装最新稳定版nginx</a></div><div data-thread-key="nginx-yum-install-zabbix3/" data-title="zabbix# centos7 yum 安装zabbix3.0" data-url="http://blog.hp-z.com/nginx-yum-install-zabbix3/" class="ds-share flat"><div class="ds-share-inline"><ul class="ds-share-icons-16"><li data-toggle="ds-share-icons-more"><a href="javascript:void(0);" class="ds-more">分享到：</a></li><li><a href="javascript:void(0);" data-service="weibo" class="ds-weibo">微博</a></li><li><a href="javascript:void(0);" data-service="qzone" class="ds-qzone">QQ空间</a></li><li><a href="javascript:void(0);" data-service="qqt" class="ds-qqt">腾讯微博</a></li><li><a href="javascript:void(0);" data-service="wechat" class="ds-wechat">微信</a></li></ul><div class="ds-share-icons-more"></div></div></div><div data-thread-key="nginx-yum-install-zabbix3/" data-title="zabbix# centos7 yum 安装zabbix3.0" data-url="http://blog.hp-z.com/nginx-yum-install-zabbix3/" data-author-key="1" class="ds-thread"></div></div></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://blog.hp-z.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/nginx/">nginx</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/zabbix/">zabbix</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/nginx-yum-install-zabbix3/">zabbix# centos7 yum 安装zabbix3.0</a></li><li class="post-list-item"><a class="post-list-link" href="/nginx-yum-install-nginx/">nginx# yum 安装最新稳定版nginx</a></li><li class="post-list-item"><a class="post-list-link" href="/zabbix-zabbix-mointor-postfix/">zabbix# zabbix3.0 监控 postfix</a></li><li class="post-list-item"><a class="post-list-link" href="/zabbix-zabbix-monitor-mysql/">zabbix# zabbix3.0 监控 mysql</a></li><li class="post-list-item"><a class="post-list-link" href="/zabbix-monitor-nginx-with-zabbix/">zabbix# zabbix3.0 监控 nginx</a></li><li class="post-list-item"><a class="post-list-link" href="/zabbix-zabbix-monitor-tomcats/">zabbix# zabbix3.0 监控 tomcat</a></li></ul></div><div class="widget"><div class="comments-title"><i class="fa fa-comment-o"> 最近评论</i></div><div data-num-items="5" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="32" data-show-title="1" class="ds-recent-comments"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.hp-z.com/" title="www.hp-z.com" target="_blank">www.hp-z.com</a><ul></ul><a href="https://github.com/zhanghepeng/Thinking.git" title="github-Thinking" target="_blank">github-Thinking</a><ul></ul><a href="https://github.com/zhanghepeng/zhanghepeng.git" title="github-zhanghepeng" target="_blank">github-zhanghepeng</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">Thinking.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>var duoshuoQuery = {short_name:'zhanghepeng'};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ef217bc16f9d71565e00eeb1820237a4";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
