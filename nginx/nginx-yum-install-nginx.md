@@ -1,12 +1,12 @@
----
-title: 'nginx# yum °²×°×îÐÂÎÈ¶¨°ænginx'
+ï»¿---
+title: 'nginx# yum å®‰è£…æœ€æ–°ç¨³å®šç‰ˆnginx'
 date: 2016-03-14 11:25:38
 categories: nginx
 toc: true
 tags:
 ---
 
-`nginx ¹Ù·½ÎÄµµ£ºhttp://nginx.org/en/linux_packages.html`
+`nginx å®˜æ–¹æ–‡æ¡£ï¼šhttp://nginx.org/en/linux_packages.html`
 
 ##### To set up the yum repository for RHEL/CentOS, create the file named /etc/yum.repos.d/nginx.repo with the following contents:
 
@@ -16,8 +16,8 @@ tags:
 					baseurl=http://nginx.org/packages/OS/OSRELEASE/$basearch/
 					gpgcheck=0
 					enabled=1
-```      
-######    	Replace "OS" with "rhel" or "centos", depending on the distribution used, and "OSRELEASE" with "5", "6", or "7", for 5.x, 6.x, or 7.x versions, respectively¡£
+```
+######    	Replace "OS" with "rhel" or "centos", depending on the distribution used, and "OSRELEASE" with "5", "6", or "7", for 5.x, 6.x, or 7.x versions, respectivelyã€‚
   
     
 #####    install nginx
