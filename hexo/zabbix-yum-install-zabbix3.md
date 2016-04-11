@@ -17,7 +17,7 @@ tags:
 			启用防火墙: systemctl start firewalld.service
 			查看状态：    systemctl start firewalld.service  /  firewall-cmd --state
 			开机启动：  systemctl enable firewalld.service
-			添加永久端口：  firewall-cmd --permanet  --add-port=5201/tcp
+			添加永久端口：  firewall-cmd --permanet  --add-port=10050/tcp
 			删除永久端口:    firewall-cmd --permanent --remove-port=80/tcp
 			配置生效：  firewall-cmd --reload
 `
@@ -29,7 +29,7 @@ tags:
 			  interfaces: 
 			  sources: 
 			  services: dhcpv6-client ssh
-			  ports: 5201/tcp
+			  ports: 10050/tcp
 			  masquerade: no
 			  forward-ports: 
 			  icmp-blocks: 
@@ -44,7 +44,7 @@ tags:
 			  interfaces: 
 			  sources: 
 			  services: dhcpv6-client ssh
-			  ports: 80/tcp 5201/tcp
+			  ports: 80/tcp 10050/tcp
 			  masquerade: no
 			  forward-ports: 
 			  icmp-blocks: 
@@ -58,7 +58,7 @@ tags:
 			  interfaces: 
 			  sources: 
 			  services: dhcpv6-client ssh
-			  ports: 5201/tcp
+			  ports: 10050/tcp
 			  masquerade: no
 			  forward-ports: 
 			  icmp-blocks: 
