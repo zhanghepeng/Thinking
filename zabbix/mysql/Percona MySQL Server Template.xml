@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-03-30T06:08:17Z</date>
+    <date>2016-04-19T22:44:21Z</date>
     <groups>
         <group>
             <name>percona  Templates</name>
