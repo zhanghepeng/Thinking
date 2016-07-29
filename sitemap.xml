@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+        <loc>https://blog.hp-z.com/blog/</loc>
+        
+          
+          
+          
+          <priority>1.0</priority>
+          
+        
+       </url>
+    
+  
+    
+      <url>
+        <loc>https://blog.hp-z.com/</loc>
+        
+          
+          
+          
+          <priority>1.0</priority>
+          
+        
+       </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+        <loc>https://blog.hp-z.com/blog/page2/</loc>
+        
+          
+          
+          
+          <priority>1.0</priority>
+          
+        
+       </url>
+    
+  
+    
+      <url>
+        <loc>https://blog.hp-z.com/blog/page3/</loc>
+        
+          
+          
+          
+          <priority>1.0</priority>
+          
+        
+       </url>
+    
+  
+  
+    <url>
+      <loc>https://blog.hp-z.com/2016/07/27/solrcloud-install-on-centos6.html</loc>
+      
+        <lastmod>2016-07-27T00:00:00+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/2016/06/02/install-ownCloud.html</loc>
+      
+        <lastmod>2016-06-02T00:00:00+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/2016/05/31/linux-anacron.html</loc>
+      
+        <lastmod>2016-05-31T00:00:00+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/2016/05/31/Linux-kernel.html</loc>
+      
+        <lastmod>2016-05-31T00:00:00+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/2016/05/31/centos7-yum-install-logstash.html</loc>
+      
+        <lastmod>2016-05-31T00:00:00+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/2016/05/17/mongodb-cluster-install.html</loc>
+      
+        <lastmod>2016-05-17T00:00:00+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/galera/2016/05/16/galera_cluster_mysql.html</loc>
+      
+        <lastmod>2016-05-16T19:25:38+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/zabbix/2016/04/12/zabbix-monitor-php-fpm.html</loc>
+      
+        <lastmod>2016-04-12T19:25:38+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/zabbix/2016/04/12/zabbix-monitor-juniper-SRX240.html</loc>
+      
+        <lastmod>2016-04-12T19:25:38+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/zabbix/2016/03/14/zabbix-zabbix-mointor-postfix.html</loc>
+      
+        <lastmod>2016-03-14T19:25:38+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/zabbix/2016/03/14/zabbix-monitor-tomcats.html</loc>
+      
+        <lastmod>2016-03-14T19:25:38+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/zabbix/2016/03/14/zabbix-monitor-mysql.html</loc>
+      
+        <lastmod>2016-03-14T19:25:38+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/nginx/2016/03/14/yum-install-nginx.html</loc>
+      
+        <lastmod>2016-03-14T19:25:38+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://blog.hp-z.com/2016/03/14/zabbix-3.0-monitor-nginx.html</loc>
+      
+        <lastmod>2016-03-14T00:00:00+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+</urlset>

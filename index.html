@@ -1,17 +1,630 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Thinking | null</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Thinking</h1><a id="logo" href="/.">Thinking</a><p class="description"></p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/rss/"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h2 class="post-title"><a href="/zabbix-zabbix-monitor-juniper-SRX240/">zabbix# zabbix3.0监控juniper-SRX240</a></h2><div class="post-meta">2016-04-12</div><a data-thread-key="zabbix-zabbix-monitor-juniper-SRX240/" href="/zabbix-zabbix-monitor-juniper-SRX240/#comments" class="ds-thread-count"></a><div class="post-content"><p><code>使用zabbix3 来监控juniper SRX240防火墙</code></p></div><p class="readmore"><a href="/zabbix-zabbix-monitor-juniper-SRX240/">阅读更多</a></p></div><div class="post"><h2 class="post-title"><a href="/zabbix-zabbix-monitor-php-fpm/">zabbix# zabbix3.0 监控 php-fpm</a></h2><div class="post-meta">2016-04-12</div><a data-thread-key="zabbix-zabbix-monitor-php-fpm/" href="/zabbix-zabbix-monitor-php-fpm/#comments" class="ds-thread-count"></a><div class="post-content"><p>1,开启php-fpm状态页<br>2,配置nginx访问php-fpm状态页<br>3,curl测试php-fpm状态的访问 </p></div><p class="readmore"><a href="/zabbix-zabbix-monitor-php-fpm/">阅读更多</a></p></div><div class="post"><h2 class="post-title"><a href="/zabbix-yum-install-zabbix3/">zabbix# centos7 yum安装zabbix3</a></h2><div class="post-meta">2016-03-14</div><a data-thread-key="zabbix-yum-install-zabbix3/" href="/zabbix-yum-install-zabbix3/#comments" class="ds-thread-count"></a><div class="post-content"><h5 id="安装epel源-并安装所需要的软件"><a href="#安装epel源-并安装所需要的软件" class="headerlink" title="安装epel源,并安装所需要的软件"></a>安装epel源,并安装所需要的软件</h5><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh http<span class="variable">s:</span>//<span class="keyword">dl</span>.fedoraproject.org/pub/epel/epel-release-latest-<span class="number">7</span>.noarch.rpm </span><br><span class="line">yum -<span class="keyword">y</span> install gcc gcc-<span class="keyword">c</span>++ <span class="keyword">vim</span> openipmi libssh2 fping libcurl libiksemel libxml2 net-snmp</span><br></pre></td></tr></table></figure></div><p class="readmore"><a href="/zabbix-yum-install-zabbix3/">阅读更多</a></p></div><div class="post"><h2 class="post-title"><a href="/python-1-python起步/">python# 1-python 起步</a></h2><div class="post-meta">2016-03-14</div><a data-thread-key="python-1-python起步/" href="/python-1-python起步/#comments" class="ds-thread-count"></a><div class="post-content"><h5 id="1-abs-内建函数-取绝对值"><a href="#1-abs-内建函数-取绝对值" class="headerlink" title="1,abs 内建函数(取绝对值):"></a>1,abs 内建函数(取绝对值):</h5><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt; abs(-<span class="number">9</span>)</span><br><span class="line"><span class="number">9</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; abs(<span class="number">9</span>)</span><br><span class="line"><span class="number">9</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; abs(<span class="number">0</span>)</span><br><span class="line"><span class="number">0</span></span><br></pre></td></tr></table></figure></div><p class="readmore"><a href="/python-1-python起步/">阅读更多</a></p></div><div class="post"><h2 class="post-title"><a href="/python-3-python流程控制语句/">python# 3 python 流程控制语句</a></h2><div class="post-meta">2016-03-14</div><a data-thread-key="python-3-python流程控制语句/" href="/python-3-python流程控制语句/#comments" class="ds-thread-count"></a><div class="post-content"><h5 id="1-if-else-语句"><a href="#1-if-else-语句" class="headerlink" title="1,if else 语句"></a>1,if else 语句</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">语法如下:</span><br><span class="line">		<span class="keyword">if</span> expression:</span><br><span class="line">		    <span class="keyword">if</span>_suite</span><br><span class="line">		`如果表达式的值非0或者布尔值为<span class="literal">true</span>,则执行 <span class="keyword">if</span>_suite`</span><br><span class="line">		<span class="keyword">if</span> expression:</span><br><span class="line">			<span class="keyword">if</span>_suite</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			<span class="keyword">else</span>_suite</span><br><span class="line">		<span class="keyword">if</span> expression1:</span><br><span class="line">			<span class="keyword">if</span>_suite</span><br><span class="line">		<span class="keyword">elif</span> expression2:</span><br><span class="line">			<span class="keyword">elif</span>_suite</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			<span class="keyword">else</span>_suite</span><br></pre></td></tr></table></figure></div><p class="readmore"><a href="/python-3-python流程控制语句/">阅读更多</a></p></div><div class="post"><h2 class="post-title"><a href="/zabbix-monitor-nginx-with-zabbix/">zabbix# zabbix3.0 监控 nginx</a></h2><div class="post-meta">2016-03-14</div><a data-thread-key="zabbix-monitor-nginx-with-zabbix/" href="/zabbix-monitor-nginx-with-zabbix/#comments" class="ds-thread-count"></a><div class="post-content"><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">zabbix</span> 监控 nginx 使用的是监控nginx的状态页,步骤分为如下几步:</span><br><span class="line">		<span class="number">1</span>,开启nginx 状态页</span><br><span class="line">		<span class="number">2</span>,编写nginx 监控脚本</span><br><span class="line">		<span class="number">3</span>,配置nginx 的参数文件</span><br><span class="line">		<span class="number">4</span>,导入nginx 模版</span><br></pre></td></tr></table></figure></div><p class="readmore"><a href="/zabbix-monitor-nginx-with-zabbix/">阅读更多</a></p></div><div class="post"><h2 class="post-title"><a href="/ELK-ELK-yum-install-logstash/">ELK-logstash# yum  安装logstash</a></h2><div class="post-meta">2016-03-14</div><a data-thread-key="ELK-ELK-yum-install-logstash/" href="/ELK-ELK-yum-install-logstash/#comments" class="ds-thread-count"></a><div class="post-content"><p><code>Logstash is an open source data collection engine with real-time pipelining capabilities. </div><p class="readmore"><a href="/ELK-ELK-yum-install-logstash/">阅读更多</a></p></div><div class="post"><h2 class="post-title"><a href="/zabbix-zabbix-mointor-postfix/">zabbix# zabbix3.0 监控 postfix</a></h2><div class="post-meta">2016-03-14</div><a data-thread-key="zabbix-zabbix-mointor-postfix/" href="/zabbix-zabbix-mointor-postfix/#comments" class="ds-thread-count"></a><div class="post-content"><h5 id="1-安装两个软件-pflogsumm-amp-logtail"><a href="#1-安装两个软件-pflogsumm-amp-logtail" class="headerlink" title="1,安装两个软件 pflogsumm &amp; logtail"></a>1,安装两个软件 pflogsumm &amp; logtail</h5><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">pflogsumm</span>:  #网址：<span class="attribute">http</span>:<span class="comment">//jimsun.linxnet.com/postfix_contrib.html  </span></span><br><span class="line">		 #下载：<span class="attribute">http</span>:<span class="comment">//jimsun.linxnet.com/downloads/pflogsumm-1.1.3.tar.gz</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">				[root<span class="variable">@mail</span> opt]# tar -xf pflogsumm-<span class="number">1.1</span>.<span class="number">3</span>.tar.gz </span><br><span class="line">				[root<span class="variable">@mail</span> opt]# cd pflogsumm-<span class="number">1.1</span>.<span class="number">3</span></span><br><span class="line">				[root<span class="variable">@mail</span> pflogsumm-<span class="number">1.1</span>.<span class="number">3</span>]# ls</span><br><span class="line">				ChangeLog  pflogsumm.<span class="number">1</span>  pflogsumm-faq.txt  pflogsumm.pl  README  ToDo</span><br><span class="line">				[root<span class="variable">@mail</span> pflogsumm-<span class="number">1.1</span>.<span class="number">3</span>]# mv pflogsumm.pl  /usr/sbin/pflogsumm </span><br><span class="line">			</span><br><span class="line"><span class="attribute">logtail</span>: #网址:<span class="attribute">http</span>:<span class="comment">//www.fourmilab.ch/webtools/logtail/</span></span><br><span class="line">	  #下载：<span class="attribute">http</span>:<span class="comment">//www.fourmilab.ch/webtools/logtail/logtail.tar.gz</span></span><br><span class="line"></span><br><span class="line">			[root<span class="variable">@mail</span> opt]# tar -zxf logtail.tar.gz </span><br><span class="line">			[root<span class="variable">@mail</span> opt]# ls</span><br><span class="line">			logstash  logtail.<span class="number">1</span>  logtail.gif  logtail.html  logtail.pl  logtail.tar.gz  pflogsumm-<span class="number">1.1</span>.<span class="number">3</span>  pflogsumm-<span class="number">1.1</span>.<span class="number">3</span>.tar.gz</span><br><span class="line">			[root<span class="variable">@mail</span> opt]# chmod +x logtail.pl </span><br><span class="line">			[root<span class="variable">@mail</span> opt]# mv logtail.pl  logtail</span><br><span class="line">			[root<span class="variable">@mail</span> opt]# which perl</span><br><span class="line">			/usr/bin/perl</span><br><span class="line">			[root<span class="variable">@mail</span> opt]# head -<span class="number">1</span> logtail</span><br><span class="line">			#! /bin/perl</span><br><span class="line">			[root<span class="variable">@mail</span> opt]# sed -i s<span class="string">"/bin\/perl/usr\/bin\/perl/g"</span> logtail</span><br><span class="line">			[root<span class="variable">@mail</span> opt]# head -<span class="number">1</span> logtail</span><br><span class="line">			#! /usr/bin/perl</span><br><span class="line">			[root<span class="variable">@mail</span> opt]# mb logtail /usr/sbin/logtail</span><br></pre></td></tr></table></figure></div><p class="readmore"><a href="/zabbix-zabbix-mointor-postfix/">阅读更多</a></p></div><div class="post"><h2 class="post-title"><a href="/nginx-yum-install-nginx/">nginx# yum 安装最新稳定版nginx</a></h2><div class="post-meta">2016-03-14</div><a data-thread-key="nginx-yum-install-nginx/" href="/nginx-yum-install-nginx/#comments" class="ds-thread-count"></a><div class="post-content"><p><code>nginx 官方文档：http://nginx.org/en/linux_packages.html</code></p></div><p class="readmore"><a href="/nginx-yum-install-nginx/">阅读更多</a></p></div><div class="post"><h2 class="post-title"><a href="/python-2-python变量-赋值-字类型-字符串-列表-元组-字典/">python# 2-python 变量、赋值、数字类型、字符串、列表、元组、字典</a></h2><div class="post-meta">2016-03-14</div><a data-thread-key="python-2-python变量-赋值-字类型-字符串-列表-元组-字典/" href="/python-2-python变量-赋值-字类型-字符串-列表-元组-字典/#comments" class="ds-thread-count"></a><div class="post-content"><h5 id="1-变量名命名规则-字母和下划线开头-大小写敏感"><a href="#1-变量名命名规则-字母和下划线开头-大小写敏感" class="headerlink" title="1,变量名命名规则:字母和下划线开头,大小写敏感"></a>1,变量名命名规则:字母和下划线开头,大小写敏感</h5><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt; courter=<span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; mills=<span class="number">100.2</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; name=<span class="string">'jack'</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; counter=courter + <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; sssx=counter * mills</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; print(sssx)</span><br><span class="line"><span class="number">100.2</span></span><br></pre></td></tr></table></figure></div><p class="readmore"><a href="/python-2-python变量-赋值-字类型-字符串-列表-元组-字典/">阅读更多</a></p></div><nav class="page-navigator"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a></nav></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://blog.hp-z.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ELK/">ELK</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/nginx/">nginx</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/zabbix/">zabbix</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/zabbix-zabbix-monitor-juniper-SRX240/">zabbix# zabbix3.0监控juniper-SRX240</a></li><li class="post-list-item"><a class="post-list-link" href="/zabbix-zabbix-monitor-php-fpm/">zabbix# zabbix3.0 监控 php-fpm</a></li><li class="post-list-item"><a class="post-list-link" href="/zabbix-yum-install-zabbix3/">zabbix# centos7 yum安装zabbix3</a></li><li class="post-list-item"><a class="post-list-link" href="/python-1-python起步/">python# 1-python 起步</a></li><li class="post-list-item"><a class="post-list-link" href="/python-3-python流程控制语句/">python# 3 python 流程控制语句</a></li><li class="post-list-item"><a class="post-list-link" href="/zabbix-monitor-nginx-with-zabbix/">zabbix# zabbix3.0 监控 nginx</a></li><li class="post-list-item"><a class="post-list-link" href="/ELK-ELK-yum-install-logstash/">ELK-logstash# yum  安装logstash</a></li><li class="post-list-item"><a class="post-list-link" href="/zabbix-zabbix-mointor-postfix/">zabbix# zabbix3.0 监控 postfix</a></li><li class="post-list-item"><a class="post-list-link" href="/nginx-yum-install-nginx/">nginx# yum 安装最新稳定版nginx</a></li><li class="post-list-item"><a class="post-list-link" href="/python-2-python变量-赋值-字类型-字符串-列表-元组-字典/">python# 2-python 变量、赋值、数字类型、字符串、列表、元组、字典</a></li></ul></div><div class="widget"><div class="comments-title"><i class="fa fa-comment-o"> 最近评论</i></div><div data-num-items="5" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="32" data-show-title="1" class="ds-recent-comments"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.hp-z.com/" title="www.hp-z.com" target="_blank">www.hp-z.com</a><ul></ul><a href="https://github.com/zhanghepeng/Thinking.git" title="github-Thinking" target="_blank">github-Thinking</a><ul></ul><a href="https://github.com/zhanghepeng/zhanghepeng.git" title="github-zhanghepeng" target="_blank">github-zhanghepeng</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">Thinking.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>var duoshuoQuery = {short_name:'zhanghepeng'};
-(function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-        || document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
-</script><script>var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?ef217bc16f9d71565e00eeb1820237a4";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-  })();
-</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+
+<!-- Index Layout Start -->
+
+<!DOCTYPE html>
+<html lang="cn">
+
+  
+<!-- HEAD Start -->
+
+<head>
+  
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="思考,Thinking！！！.">
+  <meta name="author" content="Thinking">
+  <meta name="keywords" content="solr,tomcat,oracle,zabbix,mysql,nginx">
+  <link rel="canonical" href="/">
+  <title>Thinking</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link href="/css/grayscale.css" rel="stylesheet">
+  
+  <link href="/css/timeline.css" rel="stylesheet">
+  
+
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/rrssb.css" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+  
+
+  
+
+  
+
+
+  <!-- iOS Web App mode -->
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" sizes="36x36" href="/img/web-app/icon-36p.png">
+  <link rel="apple-touch-icon" sizes="48x48" href="/img/web-app/icon-48p.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/web-app/icon-72p.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="/img/web-app/icon-96p.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/web-app/icon-144p.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/img/web-app/icon-192p.png">
+
+  <!-- Android Web App mode -->
+
+  <link rel="manifest" href="/manifest.json">
+
+
+
+
+  
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#000000">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#000000">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+  
+
+
+
+</head>
+
+<!-- HEAD End -->
+
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  data-offset="151">
+
+    
+<!-- Navigation Start -->
+
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="#page-top">
+      
+          <div>
+            
+              <img src="/img/black-lab-glass.ico" alt="">
+            
+            Thinking
+          </div>
+        </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        
+
+          <!-- Scroll to section for each page in index -->
+          
+            <li>
+              <a class="page-scroll" href="#about"> About </a>
+            </li>
+          
+            <li>
+              <a class="page-scroll" href="#latest-post"> Blog </a>
+            </li>
+          
+            <li>
+              <a class="page-scroll" href="#timeline"> TimeLine </a>
+            </li>
+          
+            <li>
+              <a class="page-scroll" href="#contact"> Contact </a>
+            </li>
+          
+
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Navigation End -->
+
+
+    
+<!-- Intro Start -->
+
+<header class="intro">
+  <div class="intro-body">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h1 class="brand-heading">&nbsp;</h1>
+            <h1 class="brand-heading">&nbsp;</h1>
+            <span class="intro-text"><!--
+If you want to have a static message in your intro layout, disable the dynamic-typing in the _config.yml and write here your text
+-->
+</span>
+            <h5>&nbsp;</h5>
+            <a href="#about" class="page-scroll">
+              <img class="img-me" src="/img/jetpacktocat.png" alt="">
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+</header>
+
+<!-- Intro End -->
+
+
+    
+      
+        
+      
+        
+          
+<!-- About Start -->
+
+<section id="about" class="container content-section text-center">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2 id="about">About</h2>
+
+<p>Github’s Octocat was designed by Simon Oxley, alongside the white bird Twitter used (before they received a proper logo) as part of a usual routine of cranking out images for iStock. GitHub saw it, and wanted it, presumably under the notion that it can represent how complex code combines to create peculiar things, much like the octopuss… except the CEO of GitHub called it an octocat, and it has been the octocat since <a href="https://www.quora.com/GitHub/What-is-the-story-behind-GitHub%E2%80%99s-octocat-mascot" target="_blank">[via]</a>.</p>
+
+<p><small>
+Octocat is Github’s logo and trademark and here is used to illustrate a fictional character (John Smith) that used the <em>{ Personal }</em> Jekyll Theme to build his website.
+</small></p>
+
+<p>Support the repo by starring or forking it!</p>
+
+<iframe src="https://ghbtns.com/github-btn.html?user=panossakkos&amp;repo=personal-jekyll-theme&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+<iframe src="https://ghbtns.com/github-btn.html?user=panossakkos&amp;repo=personal-jekyll-theme&amp;type=fork&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+    </div>
+  </div>
+</section>
+
+<!-- About End -->
+
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+<!-- Latest Post Preview Start -->
+
+<section id="latest-post" class="container content-section text-center">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+
+        <h2 id="section">↓最近更新↓</h2>
+
+
+        
+        <h4> <strong> 27 Jul 2016 </strong>
+          <small>.
+            <a class="category" href="/categories/.html">
+              
+            </a>
+          .</small>
+          <strong> <a href="/2016/07/27/solrcloud-install-on-centos6.html">solrcloud 分布式集群搭建 </a> </strong>
+          <small> <a href="/2016/07/27/solrcloud-install-on-centos6.html#disqus_thread">Comments</a></small>
+        </h4>
+
+        <p>1,系统环境:</p> <p>#1&gt;软件版本</p> <div class="highlighter-rouge"><pre class="highlight"><code> system: CentOS release 6.8 (Final) tomcat: apache-tomcat-7.0.70 java: java version "1.7.0_71" zookeeper: zookeeper-3.4.6 selinux: setenforce 0 </code></pre> </div> <p>#2&gt;jdk配置</p> <div class="highlighter-rouge"><pre class="highlight"><code> # tar -zxf jdk-7u71-linux-x64.tar.gz -C /usr/local/ # cd /usr/local/ # mv jdk1.7.0_71 jdk # cat &amp;gt;&amp;gt; /etc/profile &amp;lt;&amp;lt;EOF &amp;gt; export JAVA_HOME=/usr/local/jdk &amp;gt; export PATH=\$JAVA_HOME/bin:\$PATH &amp;gt; export CLASSPATH=.:\$JAVA_HOME/lib/dt.jar:\$JAVA_HOME/lib/tools.jar &amp;gt; EOF # source /etc/profile </code></pre> </div> <p>#3&gt;所需目录</p> <div class="highlighter-rouge"><pre class="highlight"><code>zookeeper数据目录: # mkdir -p /data/zookeeper/data solr目录配置: # mkdir /data/solr/{solr_conf,solr_core} -p </code></pre> </div> <p>#4&gt;hosts配置</p> <p>192.168.0.80 80.solr.cluster 192.168.0.81 81.solr.cluster 192.168.0.82 82.solr.cluster</p> <p>2,zookeeper集群搭建 [root@80 opt]# tar -zxf zookeeper-3.4.6.tar.gz -C /usr/local/ [root@80 opt]# cd /usr/local/ [root@80...
+
+        <h4><a href="/blog/">查看更多...</a></h4>
+
+      </div>
+    </div>
+</section>
+
+<!-- Latest Post Preview End -->
+
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+<!-- Timeline Start -->
+
+<section id="timeline" class="container content-section text-center">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+      <h2 id="section">时间轴</h2>
+
+
+      <ul class="timeline">
+
+        
+          
+          
+
+          <li class="
+          
+          ">
+            <div class="timeline-image">
+              <img class="img-circle img-responsive" src="/img/timeline/spidertocat.png" alt="">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>September 2013 - Today</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Saving the neighborhood!</p>
+
+              </div>
+            </div>
+          </li>
+        
+          
+          
+
+          <li class="
+          
+            timeline-inverted
+          
+          ">
+            <div class="timeline-image">
+              <img class="img-circle img-responsive" src="/img/timeline/baracktocat.jpg" alt="">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>September 2007 - August 2013</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Started coding</p>
+
+              </div>
+            </div>
+          </li>
+        
+
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-circle img-responsive" src="/img/timeline/default.png" alt="">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline End -->
+
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+      
+        
+      
+        
+      
+        
+          
+<!-- Contact Start -->
+
+<section id="contact" class="container content-section text-center">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+      <h2 id="contact">Contact</h2>
+
+<p>如果文章有问题,或者您有更好的建议,如果您愿意指导我,请联系我!
+	QQ:977825949
+	email:zhanghepeng@aliyun.com</p>
+
+
+      
+        
+          
+            <p>
+            <script>
+              function join_at_email(user, domain){
+              return (user && domain)?(user + "@" + domain):"";
+              }
+              document.write('<a href="mailto:'
+              + join_at_email( "zhanghepeng", "aliyun.com" )
+              + '">'
+              + join_at_email( "zhanghepeng", "aliyun.com" )
+              + '</a>'
+              );
+              </script>
+            </p>
+        
+      
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact End -->
+
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+ <!-- Footer Start -->
+
+<footer>
+
+    
+<!-- Social Buttons Start -->
+
+<ul class="list-inline social-buttons">
+  
+    <li><a href="https://www.facebook.com/profile.php?id=100011330562623" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
+  
+    <li><a href="https://twitter.com/zhanghepeng" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+  
+    <li><a href="https://github.com/zhanghepeng" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+  
+</ul>
+
+<!-- Social Buttons End -->
+
+
+    <p><br><br></p>
+
+    <div class="container text-center">
+      <p>Copyright &copy; Thinking 2016</p>
+    </div>
+</footer>
+
+<p><br><br><br><br><br><br></p>
+
+<!-- Footer End -->
+
+
+    
+<!-- Javascript Start -->
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<!--* Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+* Code licensed under the Apache License v2.0.
+* For details, see http://www.apache.org/licenses/LICENSE-2.0.-->
+<script>
+function toggleNavCollapse(){50<$(".navbar").offset().top?$(".navbar-fixed-top").addClass("top-nav-collapse"):$(".navbar-fixed-top").removeClass("top-nav-collapse");}
+$(document).ready(toggleNavCollapse);
+$(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click",function(b){var a=$(this);$("html, body").stop().animate({scrollTop:$(a.attr("href")).offset().top-50},1500,"easeInOutExpo",function(){a.blur()});b.preventDefault()})});$(".navbar-collapse ul li a").click(function(){$(".navbar-toggle:visible").click()});
+</script>
+
+
+
+  <!-- Collapse navbar when navbar-brand is clicked -->
+
+  <script>
+  $(function(){$(".navbar-brand").click(function(){$(".collapse.in")&&$(".collapse.in").animate({height:"1px"},500,function(){$(".collapse.in").removeClass("in")})})});
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Dynamic Typing Start -->
+
+  <script type="text/javascript" src="/js/typed.min.js"></script>
+  <script type="text/javascript">
+
+  var myQuotes =  new Array();
+  
+    myQuotes.push("wellcome,本人记录的博客欢迎指导.");
+  
+    myQuotes.push("如果本站有错误,请联系我,非常感谢！");
+  
+
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex ;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  }
+
+  
+    shuffle(myQuotes)
+  
+
+    $(".intro-text").typed({
+      strings: myQuotes,
+      typeSpeed: 10,
+      backDelay: 5000,
+      startDelay: 200,
+      loop: true,
+      loopCount: false,
+      cursorChar: "|"
+    });
+  </script>
+
+  <!-- Dynamic Typing End  -->
+
+
+
+<script>
+function addTohistory() {
+  if (!window.location.host.startsWith("127.0.0.1")) {
+    history.pushState({}, '', 'https://blog.hp-z.com/');
+  }
+}
+</script>
+
+<!-- Gesture Navigation / Swipe Instruction Start -->
+
+
+  
+
+  
+
+  
+
+  
+
+<!-- Gesture Navigation / Swipe Instruction End -->
+
+
+
+<!-- Javascript End -->
+
+
+  </body>
+</html>
+
+<!-- Index Layout End -->
